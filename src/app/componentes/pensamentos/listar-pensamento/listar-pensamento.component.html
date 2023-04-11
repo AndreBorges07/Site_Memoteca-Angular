@@ -1,0 +1,53 @@
+<section class="container">
+  <header class="header d-flex">
+    <div class="buscar-pensamentos">
+      <input
+        type="search"
+        class="filtro"
+        placeholder="O que procuras?"
+        autofocus
+        [(ngModel)]="filtro"
+        (keyup)="pesquisarPensamentos()"
+      />
+      <!-- Esse "autofocus" serve para que a página ao ser carregado o foco vai direto para essa parte da busca -->
+      <!-- keyup - É para enquanto se escreve ele já faz a busca  -->
+      <img src="/assets/imagens/lupa.png" alt="Lupa Azul" />
+    </div>
+    <h2 class="ff-inter">{{ titulo }}</h2>
+    <!-- TÍTULO do mural  -->
+
+    <div class="botoes">
+      <button class="botao" (click)="recarregarComponente()">Meu Mural</button>
+      <button class="botao" (click)="listarFavoritos()">Meus Favoritos</button>
+      <button routerLink="/criarPensamento" class="botao">
+        Novo pensamento
+      </button>
+    </div>
+  </header>
+  <div class="mural" *ngIf="listaPensamentos.length > 0; else semPensamentos">
+    <!-- *ngIf - Serve para que este só seja exibido caso tenha algum pensamento já listado, do contrário ele não mostra. Sim, é um If mesmo.   -->
+    <div *ngFor="let pensamento of listaPensamentos">
+      <!-- Esse "pensamento" poderia receber qualquer nome, é o evento apenas. perceba que "*ng" é como a inicial do "Angular (ang)". Para usar o for no Angular ele lembra que é pelo Angular com o "*ngFor". -->
+
+      <app-pensamento
+        [pensamento]="pensamento"
+        [listaFavoritos]="listaFavoritos"
+      ></app-pensamento>
+      <!-- O Pensamento que recebe esse modelinho com o nome "pensamento", poderia ser qualquer outro nome. -->
+    </div>
+  </div>
+</section>
+<app-botao-carregar-mais
+  [haMaisPensamentos]="haMaisPensamentos"
+  (click)="carregarMaisPensamentos()"
+>
+</app-botao-carregar-mais>
+<!-- Esse Ng Template serve para quando não há cards de pensamento -->
+<ng-template #semPensamentos>
+  <!--O # é mais uma referência que cai lá no else, lá de cima.  -->
+  <!-- Esse ng-template necessariamente não aparece, só se quisermos que este seja exibido -->
+
+  <div class="sem-pensamentos ff-inter">
+    <p>Ainda não há pensamentos cadastrados.</p>
+  </div>
+</ng-template>

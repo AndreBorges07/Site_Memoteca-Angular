@@ -1,0 +1,42 @@
+<!-- Aqui já é o modelinho do "card" já postado, com o botão de editar e exluir -->
+<!-- Para começar o backend -> npm start
+Para começar o ssistema mesmo -> ng serve -->
+
+<div
+  class="pensamento {{ pensamento.modelo }} ff-roboto-mono"
+  [ngClass]="larguraPensamento()"
+>
+  <!-- Isso das chaves também é um jeito de colocar a classe nessa "interpolação"... Confesso é "novo" isso, pra não dizer outra coisa.   -->
+  <!-- Classe muda automática - Isso de "[ngClass] pega e muda a classe de acordo com a função "" -->
+  <img
+    src="/assets/imagens/{{ pensamento.modelo }}.png"
+    alt="Aspas Coloridas"
+  />
+  <p class="conteudo">{{ pensamento.conteudo }}</p>
+  <!-- Essas interpolações é pro texto ficar dinâmico -->
+  <p class="autoria">
+    <b>{{ pensamento.autoria }}</b>
+  </p>
+  <div class="acoes">
+    <button class="botao-favorito" (click)="atualizarFavoritos()">
+      <img
+        src="/assets/imagens/icone-favorito-{{ mudarIconeFavorito() }}.png"
+        alt="Ícone favorito {{ mudarIconeFavorito() }}"
+      />
+    </button>
+    <!-- O Nome já diz, são os botões para editar e excluir -->
+    <button class="botao-editar">
+      <img
+        src="/assets/imagens/icone-editar.png"
+        routerLink="/pensamentos/editarPensamento/{{ pensamento.id }}"
+        alt="Ícone de editar"
+      />
+    </button>
+    <button
+      class="botao-excluir"
+      routerLink="/pensamentos/excluirPensamento/{{ pensamento.id }}"
+    >
+      <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir" />
+    </button>
+  </div>
+</div>

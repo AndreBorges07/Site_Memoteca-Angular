@@ -1,28 +1,45 @@
-# Memoteca
+# Site - Memoteca 
+![Status-Concluído-green](https://user-images.githubusercontent.com/93163125/210287743-09caa864-8da5-449e-b864-deb864513652.svg)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
+![image](https://user-images.githubusercontent.com/93163125/231488739-3a7eeeda-eff4-4192-aeab-5e317290b40f.png)
+![image](https://user-images.githubusercontent.com/93163125/231488960-eee6e1c7-09ca-4de8-86ad-8555c688bcec.png)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Descrição
+Projeto preve que o usuário pode guardar lembranças, trechos de música, pensamentos em cards, podendo ser consultados de forma geral ou como Favoritos. 
+<br>Acesse o projeto aqui: https://site-alura-play.vercel.app/
 
-## Code scaffolding
+# Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<div align="center">
+<img src="https://user-images.githubusercontent.com/93163125/231504717-ab92fcc6-1ca5-49f3-980c-cb38b31590ef.png" width ="200px" />
+</div>
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Aprendizado
 
-## Running unit tests
+<ul>
+    <li>Conhecendo o Angular</li>
+    <li>Entendendo o fluxo de dados</li>
+    <li>Navegação com roteamento</li>
+    <li>Diretivas</li>
+    <li>Comunicação com o Backend</li>
+    <li>Requisições HTTP</li>
+    <li>Formulários reativos</li>
+    <li>Validação em forms reativos</li>
+    <li>Implementando a paginação</li>
+    <li>Implementando campo de busca</li>
+    <li>Adicionando Favoritos</li>
+    <li>Visualizando os favoritos</li>
+    <li>Foram feitas 102 de 102 atividades.</li>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+</ul>
 
-## Further help
+# Certificados: 
+<b>Angular 14: aplique os conceitos e desenvolva seu primeiro CRUD</b><br>
+Acesse aqui: [https://cursos.alura.com.br/certificate/4688273f-51f8-4d26-a387-4bf23258a1a1](https://cursos.alura.com.br/certificate/ebb4a156-7d24-47d9-afdb-412954a9857e)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-"# Site_Momoteca-Angular" 
+<b>Angular 14: evoluindo a aplicação</b><br>
+Acesse aqui: https://cursos.alura.com.br/certificate/0c8ecb5b-82cd-442f-b72d-794993d7c61a

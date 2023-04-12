@@ -7,7 +7,7 @@
 
 # Descrição
 Projeto preve que o usuário pode guardar lembranças, trechos de música, pensamentos em cards, podendo ser consultados de forma geral ou como Favoritos. 
-<br>Acesse o projeto aqui: https://site-alura-play.vercel.app/
+<br>Acesse o projeto aqui: 
 
 # Tecnologias utilizadas
 
